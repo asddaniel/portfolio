@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+button{
+    border: none;
+    border-radius: 2px;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+.grow{
+    flex-grow: 1;
+    
+}
+.footer{
+    flex-grow: 1;
+    display: block;
+    text-align: center;
+    font-size: bold;
+    background: white;
+}
+.column{
+    flex-direction: column;
+}
+
+.parole{
+    
+    overflow: hidden;
+    text-overflow: clip;
+}
+html > *{
+    background-color: aqua;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    background-color: rgb(238, 48, 111);
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 8px 0px rgb(2, 2, 2);
+}
+.presentater{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr auto;
+background-color: rgba(0, 0, 255, 0.575);
+color: white;
+}
+.bio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 1vh;
+    
+}
+.bio h2{
+    font-size: 8vh;
+    text-overflow: ellipsis;
+
+}
+.centralize{
+    
+    height: 8vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.container-nav{
+    transition: all 0.5s ease-in-out;
+
+}
+.nav .container-nav{
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    margin: 1vw;
+}
+.nav-links a{
+    color: white;
+}
+.link-menu{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .link-menu{
+        display: block;
+        position: absolute;
+        z-index: 300;
+        color: wheat;
+        left: 85vw;
+        font-size: 8vw;
+    }
+    .presentater{
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+    .presentater div img{
+        object-fit: cover;
+        width: 99vw;
+    }
+    .bio{
+        width: 98vw;
+        
+    }
+    .bio div{
+        width: inherit;
+    }
+    
+    .nav{
+        height: 100%;
+        position:static;
+        overflow-x: hidden;
+        
+    }
+    .container-nav1{
+        
+        overflow-x: hidden;
+
+    }
+   
+
+    .nav .container-nav{
+        left: -100vw;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+    .mobile-menu{
+        left: 0vw !important;
+        position: relative;
+    }
+   
+}

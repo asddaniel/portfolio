@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="flex column ">
+    <div class="container-nav1">
+        <nav class="nav">
+            <div class="title">DevCongo</div>
+            <div class="link-menu ">&#8803</div>
+            <div class="container-nav">
+                <li class="nav-links"><a href="#">Accueil</a></li>
+                <li class="nav-links"><a href="#">Galerie</a></li>
+                <li class="nav-links"><a href="#">Réalisations</a></li>
+                <li class="nav-links"><a href="#">Auteurs</a></li>
+                <li class="nav-links"><a href="#">Code</a></li>
+                <li class="nav-links"><a href="#">A propos</a></li>
+            </div>
+        </nav>
+    </div>
+    <div class="presentater grow">
+        <div class="bio">
+            <div> <h2 class="parole">Fullstack developpement</h2></div>
+            <div class="centralize">
+                <button> contacte-moi </button>
+                <button>Engage-moi</button>
+            </div>
+        </div>
+        <div><img src="images/hero.png" alt=""></div>
+
+    </div>
+    <div class="footer ">
+        <p class="text-footer">Copiright Daniel Assani Novembre 2022</p>
+    </div>
+    <script>
+        document.querySelector('.link-menu').addEventListener("click", function(e){
+            document.querySelector('.container-nav').classList.toggle("mobile-menu")
+        })
+    </script>
+</body>
+</html>
