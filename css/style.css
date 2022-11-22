@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
 button{
@@ -43,7 +43,8 @@ html > *{
     padding: 0px;
 }
 .nav{
-    background-color: rgb(238, 48, 111);
+    background-color: white;
+    color: #01016da8;
     height: 10vh;
     position: fixed;
     width: 100vw;
@@ -56,7 +57,7 @@ html > *{
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr auto;
-background-color: rgba(0, 0, 255, 0.575);
+background-color: #01016da8;
 color: white;
 }
 .bio{
@@ -106,7 +107,7 @@ color: white;
     margin: 1vw;
 }
 .nav-links a{
-    color: white;
+    color: #01016da8;;
 }
 .link-menu{
     display: none;
@@ -131,10 +132,16 @@ color: white;
         width: 100vw;
     }
     .centralize{
+        flex-direction: column;
+
         justify-content: space-around;
     }
+    .parole{
+        font-size: 2vh;
+    }
     .centralize button{
-        font-size: 2em;
+        margin-top: 2vh;
+        font-size: 1em;
     }
     .presentater div img{
         object-fit: cover;
@@ -176,7 +183,7 @@ color: white;
         height: 100%;
         position: absolute;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(5px);
         
         top: 0vh;
