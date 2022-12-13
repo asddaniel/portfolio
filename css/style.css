@@ -86,6 +86,12 @@ color: white;
    
     font-weight: bold;
     box-shadow: 1px 5px 15px;
+    background: transparent;
+    backdrop-filter: blur(80%);
+}
+.centralize button:hover{
+    backdrop-filter: blur(10%);
+   outline: 1px solid;
 }
 
 .title{
